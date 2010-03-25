@@ -156,7 +156,7 @@ class TestPollock < Test::Unit::TestCase
     should "set the filename correctly" do
       colour = "999AAA"
       image = Pollock::Image.new(:height=>@height, :colour=>colour)
-      assert_equal "200x200-999AAA.jpg", image.file_name
+      assert_equal "200x200--999AAA.jpg", image.file_name
     end
     
   end

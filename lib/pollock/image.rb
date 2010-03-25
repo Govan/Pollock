@@ -43,9 +43,9 @@ module Pollock
     
     def file_name
       parts = [default_text]
-      parts << text.downcase.gsub(/[^a-z]/, '_') unless text == default_text
-      parts << colour.gsub("#", '') unless colour == DEFAULT_COLOUR
-      parts.join('-')+"."+format
+      parts << ((text == default_text) ? '' : text.downcase.gsub(/[^a-z]/, '_'))
+      parts << ((colour == DEFAULT_COLOUR) ? '' : colour.gsub("#", ''))
+      parts.join('-').gsub(/-+$/, '')+"."+format
     end
 
     def save(dir)
