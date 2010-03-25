@@ -8,7 +8,7 @@ POLLOCK_PORT = 1912
 
 set :port, POLLOCK_PORT
 set :public, PUBLIC_DIR
-set :env, :production
+set :environment, :production
 
 get "/" do
   File.open(File.join(PUBLIC_DIR, 'index.html'))

@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pollock}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gavin Montague"]
@@ -26,33 +26,37 @@ Gem::Specification.new do |s|
      "bin/pollockserver",
      "lib/pollock/image.rb",
      "lib/pollock/webapp.rb",
-     "public/images/faux-pollock-alt.jpg",
      "public/images/faux-pollock.jpg",
      "public/index.html",
      "public/placeholders/100x100.jpg",
-     "public/placeholders/100x200.jpg",
-     "public/placeholders/200x100-label.jpg",
-     "public/placeholders/200x100.jpg",
-     "public/placeholders/305x100-ff____.jpg",
-     "public/placeholders/305x100-x-FF0000.jpg",
-     "public/placeholders/305x100.jpg",
-     "public/placeholders/5000x200-______.jpg",
-     "public/placeholders/5000x200-foo-999000.jpg",
-     "public/placeholders/5000x200.jpg",
-     "public/placeholders/500x200.jpg",
+     "public/placeholders/200x100-with_some_text.jpg",
+     "public/placeholders/305x100--00CC00.gif",
+     "public/placeholders/305x100-with_a_colour-FF0000.png",
      "public/stylesheets/screen.css",
      "test/helper.rb",
      "test/test_image.rb",
+     "test/tmp/200x200-200x200-#CCCCCC.jpg",
+     "test/tmp/200x200-200x200-#CCCCCC.png",
+     "test/tmp/200x200-Wow! I'm a label-#CCCCCC.jpg",
+     "test/tmp/200x200-false-#CCCCCC.jpg",
+     "test/tmp/200x200-false-true.jpg",
+     "test/tmp/200x200-true-#CCCCCC.jpg",
+     "test/tmp/200x200-true-#CCCCCC.png",
+     "test/tmp/200x200-true-true.jpg",
+     "test/tmp/200x200-true-true.png",
      "test/tmp/200x200-wow__i_m_a_label.jpg",
      "test/tmp/200x200.jpg",
      "test/tmp/200x200.png",
+     "test/tmp/200x300-200x300-#CCCCCC.jpg",
+     "test/tmp/200x300-true-#CCCCCC.jpg",
+     "test/tmp/200x300-true-true.jpg",
      "test/tmp/200x300.jpg"
   ]
   s.homepage = %q{http://github.com/govan/pollock}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{A gem to save you reaching for Photoshop during html wireframing.}
+  s.summary = %q{Generate placeholders for html wireframing without going near Photoshop}
   s.test_files = [
     "test/helper.rb",
      "test/test_image.rb"
