@@ -19,3 +19,5 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+public/placeholders/*.*
+test/tmp/*.*
