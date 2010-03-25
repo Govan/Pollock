@@ -5,6 +5,7 @@ h1, h2 {
 	font-family: "HeadlineA", Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	color:#121212;
+	margin-bottom:5px;
 }
 html {
 	background:url(../images/faux-pollock.jpg) top left no-repeat;

@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pollock"
-    gem.summary = %Q{A gem to save you reaching for Photoshop during html wireframing.}
+    gem.summary = %Q{Generate placeholders for html wireframing without going near Photoshop}
     gem.description = %Q{A little Sinatra and RMagick to generate placeholder images via an http call.  Heavily inspired by http://placehold.it}
     gem.email = "gavin@leftbrained.co.uk"
     gem.homepage = "http://github.com/govan/pollock"
