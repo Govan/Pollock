@@ -28,14 +28,14 @@ $ pollockserver
 <h2>Syntax</h2>
 
 <pre>
-/placeholders/width[xheight][-some_label_text][-color]
+/placeholders/width[xheight][-some_label_text][-color].format
 </pre>
 		
 <p>Only a width is required to generate a square image.  A label can be supplied to override the default behaviour of printing the image dimensions, and finally a #RRGGBB colour can be given to change the background.</p>
 
 <p>The parameters are separated by '-' and any spaces in the label should be substitued with '_', sorry no non-alphanumeric characters yet.</p>
 
-<p>You can supply any file extension ImageMagick is capable of generating.</p>
+<p>You can supply any format extension ImageMagick is capable of generating.</p>
 
 <pre>
 http://localhost:1912/placeholders/100.jpg
