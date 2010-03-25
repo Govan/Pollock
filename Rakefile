@@ -5,13 +5,21 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pollock"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A gem to save you reaching for Photoshop during html wireframing.}
+    gem.description = %Q{A little Sinatra and RMagick to generate placeholder images via an http call.  Heavily inspired by http://placehold.it}
     gem.email = "gavin@leftbrained.co.uk"
     gem.homepage = "http://github.com/govan/pollock"
     gem.authors = ["Gavin Montague"]
+    
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "rmagick", ">= 0"
+    gem.add_dependency "sinatra", ">= 0"
+    
+    gem.executables = "pollockserver"
+    
+    gem.files =  FileList["[A-Z]*", "{bin,lib,public,test}/**/*", 'lib/jeweler/templates/.gitignore']
+    
+    
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

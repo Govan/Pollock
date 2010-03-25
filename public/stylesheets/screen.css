@@ -1,0 +1,33 @@
+* {
+	color:#575757;
+}
+h1, h2 {
+	font-family: "HeadlineA", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	color:#121212;
+}
+html {
+	background:url(../images/faux-pollock.jpg) top left no-repeat;
+}
+#wrapper {
+	width:600px;
+	margin-left:320px;
+}
+pre {
+	background:#EAEAEA;
+	padding:4px 10px;
+	border-right:solid 1px #DADADA;
+	border-bottom:solid 1px #DADADA;
+}
+p, li {
+	font-size:15px;
+	line-height:20px;
+	font-family:Georgia;
+}
+a {
+	color:#000000;
+	font-weight:bold;
+}
+a:hover {
+	color:#999999;
+}

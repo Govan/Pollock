@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+ 
+$:.unshift File.dirname(__FILE__) + "/../lib/pollock"
+ 
+require 'optparse'
+require 'rubygems'
+require 'sinatra'
+require 'image'
+
+# Argument defaults
+options = { :port => 1912}
+ 
+# Get arguments
+opts = OptionParser.new do |o|
+  o.banner = "usage: pollockserver [options]" 
+  #
+  o.on("--port", "change the port from pollock's default of 1912") do
+    options[:port] = 1912
+  end
+  #
+  o.on_tail("-h", "--help", "show this message") do
+    puts opts
+    exit
+  end
+  
+  # Version
+  # o.on_tail("-v", "--version", "show version") do
+  #   # TODO
+  #   exit
+  # end
+end
+ 
+opts.parse! # Parse arguments into `options` hash
+
+require 'webapp' # and start it rolling...
