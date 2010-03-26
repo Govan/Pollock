@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gavin Montague"]
-  s.date = %q{2010-03-25}
+  s.date = %q{2010-03-26}
   s.default_executable = %q{pollockserver}
   s.description = %q{A little Sinatra and RMagick to generate placeholder images via an http call.  Heavily inspired by http://placehold.it}
   s.email = %q{gavin@leftbrained.co.uk}
