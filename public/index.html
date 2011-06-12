@@ -1,70 +1,90 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
+"http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Pollock - Hassle free placeholder images.</title>
-	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
-	<div id="wrapper">
-		<h1><a href="/">POLLOCK</a></h1>
-			<p>Generate placeholders for html wireframing without going near Photoshop.</p>
-
-		<h2>Usage</h2>
-		<p>Before you install the gem, you'll need <a href="http://www.imagemagick.org">ImageMagick</a>. After that, it's just</p>
-<pre>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Pollock - Hassle free placeholder images.
+		</title>
+		<link rel="stylesheet" href="./stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>
+				<a href="/">POLLOCK</a>
+			</h1>
+			<p>
+				Generate placeholders for html wireframing without going near Photoshop.
+			</p>
+			<h2>
+				Usage
+			</h2>
+			<p>
+				Before you install the gem, you'll need <a href="http://www.imagemagick.org">ImageMagick</a>. After that, it's just
+			</p>
+			<pre>
 $ sudo gem install pollock
-</pre>	
-
-		<p>You'll now have access to the web-app:</p>
-<pre>
+</pre>
+			<p>
+				You'll now have access to the web-app:
+			</p>
+			<pre>
 $ pollockserver
-</pre>	
-	
-		<p>You're ready to start generating placeholders!</p>
-		
-<h2>Syntax</h2>
-
-<pre>
+</pre>
+			<p>
+				You're ready to start generating placeholders!
+			</p>
+			<h2>
+				Syntax
+			</h2>
+			<pre>
 /placeholders/width[xheight][-some_label_text][-color].format
 </pre>
-		
-<p>Only a width is required to generate a square image.  A label can be supplied to override the default behaviour of printing the image dimensions, and finally a #RRGGBB colour can be given to change the background.</p>
-
-<p>The parameters are separated by '-' and any spaces in the label should be substitued with '_', sorry no non-alphanumeric characters yet.</p>
-
-<p>You can supply any format extension ImageMagick is capable of generating.</p>
-
-<pre>
+			<p>
+				Only a width is required to generate a square image. A label can be supplied to override the default behaviour of printing the image dimensions, and finally a #RRGGBB colour can be given to change the background.
+			</p>
+			<p>
+				The parameters are separated by '-' and any spaces in the label should be substitued with '_', sorry no non-alphanumeric characters yet.
+			</p>
+			<p>
+				You can supply any format extension ImageMagick is capable of generating.
+			</p>
+			<pre>
 http://localhost:1912/placeholders/100x100.jpg
 http://localhost:1912/placeholders/200x100-with_some_text.jpg
 http://localhost:1912/placeholders/305x100-with_a_colour-FF0000.png
 http://localhost:1912/placeholders/305x100--00CC00.gif
-</pre>	
-	
-<img src="./placeholders/100x100.jpg" />
-<img src="./placeholders/200x100-with_some_text.jpg" /><br>
-<img src="./placeholders/305x100-with_a_colour-FF0000.png" /><br>
-<img src="./placeholders/305x100--00CC00.gif" /><br>
+</pre>
 
-<h2>ToDo</h2>
-<ul>
-	<li>Options for pollockserver - port, debugging info, etc.</li>
-	<li>A less noisy server.</li>
-	<li>Moar image options!</li>
-</ul>
-
-		<h2>Credits</h2>
+			<img src="./placeholders/100x100.jpg"> <img src="./placeholders/200x100-with_some_text.jpg"><br>
+			<img src="./placeholders/305x100-with_a_colour-FF0000.png"><br>
+			<img src="./placeholders/305x100--00CC00.gif"><br>
+			<h2>
+				Source
+			</h2>
+			<p><a href="https://github.com/Govan/pollock">The source code lives on github</a>.</p>
+			<h2>
+				ToDo
+			</h2>
 			<ul>
-				<li>Pollock is very, very, very heavily inspired by <a href="http://placehold.it/">Placehold.it</a>, and if it wasn't for
-					the fact that I like to work offline I'd probably just use that.</li>
-				<li>All the work is being done by <a href="http://sinatrarb.com/">Sinatra</a> and <a href="http://www.imagemagick.org">ImageMagick</a></li>
-			
-				<li>The bits were glued together by <a href="http://www.leftbrained.co.uk">Gavin Montague</a> because the hotel TV only had terrestrial channels and Sky Sports.</li>
+				<li>Options for pollockserver - port, debugging info, etc.
+				</li>
+				<li>A less noisy server.
+				</li>
+				<li>Moar image options!
+				</li>
 			</ul>
-
-	</div>
-</body>
+			<h2>
+				Credits
+			</h2>
+			<ul>
+				<li>Pollock is very, very, very heavily inspired by <a href="http://placehold.it/">Placehold.it</a>, and if it wasn't for the fact that I like to work offline I'd probably just use that.
+				</li>
+				<li>All the work is being done by <a href="http://sinatrarb.com/">Sinatra</a> and <a href="http://www.imagemagick.org">ImageMagick</a>
+				</li>
+				<li>The bits were glued together by <a href="http://www.leftbrained.co.uk">Gavin Montague</a> because the hotel TV only had terrestrial channels and Sky Sports.
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>

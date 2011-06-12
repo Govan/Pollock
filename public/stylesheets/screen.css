@@ -21,10 +21,11 @@ body {margin:0;}
 #wrapper {
 	width:600px;
 	margin-left:320px;
-	padding:0 20px;
+	padding:0 20px 20px 20px;
 	background:rgba(255, 255, 255, 0.8);
-	border:solid 1px #EAEAEA;
+	border:solid 1px #D0D0D0;
 	border-width:0 0 0 1px;
+	-webkit-box-shadow:-5px 0 4px #EAEAEA;
 }
 pre {
 	background:#EAEAEA;
